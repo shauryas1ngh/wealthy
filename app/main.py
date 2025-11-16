@@ -13,15 +13,15 @@ async def lifespan(app: FastAPI):
     Lifespan context manager for startup and shutdown events.
     """
     # Startup: Initialize database tables
-    print("🚀 Starting up application...")
-    print(f"📊 Initializing database at {settings.DATABASE_URL}")
+    print(" Starting up application...")
+    print(f" Initializing database at {settings.DATABASE_URL}")
     init_db()
-    print("✅ Database initialized successfully")
+    print(" Database initialized successfully")
     
     yield
     
     # Shutdown
-    print("👋 Shutting down application...")
+    print(" Shutting down application...")
 
 
 # Create FastAPI application
