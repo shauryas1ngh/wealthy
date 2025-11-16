@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     DATABASE_HOST: str = "localhost"
     DATABASE_PORT: int = 5432
     DATABASE_USER: str = "postgres"
-    DATABASE_PASSWORD: str = "postgres"
+    DATABASE_PASSWORD: str = "   "
     DATABASE_NAME: str = "wealthy_db"
     
     @property
