@@ -1,0 +1,2 @@
+"""Core configurations and database setup."""
+

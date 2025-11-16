@@ -21,12 +21,10 @@ async def check_prime(
     request: PrimeCheckRequest,
     db: Session = Depends(get_db)
 ):
-    """
-    Check if a number is prime and save the result to the database.
     
-    - **number**: The integer to check (can be negative, zero, or positive)
-    - Returns a unique transaction ID along with the result
-    """
+    #Check if a number is prime and save the result to the database.
+    
+    
     # Generate transaction ID
     transaction_id = PrimeService.generate_transaction_id()
     
