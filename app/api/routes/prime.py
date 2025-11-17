@@ -5,8 +5,7 @@ from typing import List
 from app.core.database import get_db
 from app.schemas.prime import (
     PrimeCheckRequest,
-    PrimeCheckResponse,
-    PrimeCheckHistoryResponse
+    PrimeCheckResponse
 )
 from app.services.prime_service import PrimeService
 

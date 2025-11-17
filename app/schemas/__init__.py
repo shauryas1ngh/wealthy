@@ -2,13 +2,11 @@
 
 from app.schemas.prime import (
     PrimeCheckRequest,
-    PrimeCheckResponse,
-    PrimeCheckHistoryResponse
+    PrimeCheckResponse
 )
 
 __all__ = [
     "PrimeCheckRequest",
-    "PrimeCheckResponse",
-    "PrimeCheckHistoryResponse"
+    "PrimeCheckResponse"
 ]
 
