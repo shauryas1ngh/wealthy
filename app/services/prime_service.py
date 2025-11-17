@@ -1,6 +1,6 @@
 import uuid
 import time
-from typing import List
+from typing import List , Optional
 from sqlalchemy.orm import Session
 from app.models.prime_check import PrimeCheckRequest as DBPrimeCheckRequest
 
@@ -49,7 +49,7 @@ class PrimeService:
         return db_record
     
     @staticmethod
-    def get_by_transaction_id(db: Session, transaction_id: str) -> DBPrimeCheckRequest | None:
+    def get_by_transaction_id(db: Session, transaction_id: str) -> Optional[DBPrimeCheckRequest]:
         
         return db.query(DBPrimeCheckRequest).filter(
             DBPrimeCheckRequest.transaction_id == transaction_id
