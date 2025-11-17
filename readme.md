@@ -10,3 +10,4 @@ Once this is setup you can run the command :
  You can check the functionality of endpoints from this webpage. 
 
  
+<img width="1254" height="602" alt="Screenshot 2025-11-17 at 3 21 30 PM" src="https://github.com/user-attachments/assets/79d72c2a-7a3b-4a8a-b0c0-1bda6c2e26ec" />
