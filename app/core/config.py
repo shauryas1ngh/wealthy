@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class Settings(BaseSettings):
-    """Application settings loaded from environment variables."""
+    #Application settings loaded from environment variables.
     
     # Application
     APP_NAME: str = "Wealthy Prime Checker API"
