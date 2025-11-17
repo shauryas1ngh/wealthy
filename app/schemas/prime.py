@@ -22,7 +22,7 @@ class PrimeCheckResponse(BaseModel):
     transaction_id: str = Field(..., description="Unique transaction identifier")
     number: int = Field(..., description="The number that was checked")
     is_prime: bool = Field(..., description="Whether the number is prime or not")
-    message: str = Field(..., description="Human-readable message about the result")
+    message: str = Field(..., description="Message about the result")
     created_at: datetime = Field(..., description="Timestamp of the request")
     
     class Config:
