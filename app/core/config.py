@@ -17,6 +17,10 @@ class Settings(BaseSettings):
     DATABASE_PASSWORD: str = "   "
     DATABASE_NAME: str = "wealthy_db"
     
+    # Queue Configuration
+    QUEUE_WORKERS: int = 4  # Number of background worker threads
+    JOB_RETENTION_HOURS: int = 24  # How long to keep job data in memory (hours)
+    
     @property
     def DATABASE_URL(self) -> str:
         """Construct the database URL."""
@@ -24,6 +28,11 @@ class Settings(BaseSettings):
             f"postgresql://{self.DATABASE_USER}:{self.DATABASE_PASSWORD}"
             f"@{self.DATABASE_HOST}:{self.DATABASE_PORT}/{self.DATABASE_NAME}"
         )
+    
+    @property
+    def JOB_RETENTION_SECONDS(self) -> int:
+        """Convert job retention hours to seconds."""
+        return self.JOB_RETENTION_HOURS * 3600
     
     class Config:
         env_file = ".env"

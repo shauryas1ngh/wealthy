@@ -5,10 +5,15 @@ from app.schemas.prime import (
     PrimeCheckResponse
     
 )
+from app.schemas.job import (
+    JobSubmitResponse,
+    JobStatusResponse
+)
 
 __all__ = [
     "PrimeCheckRequest",
-    "PrimeCheckResponse"
-    
+    "PrimeCheckResponse",
+    "JobSubmitResponse",
+    "JobStatusResponse"
 ]
 

@@ -31,7 +31,7 @@ def get_db():
 
 
 def init_db():
-    #Initialize database tables.
-    from app.models import PrimeCheckRequest
+    """Initialize database tables."""
+    from app.models import PrimeCheckRequest, PrimeCheckJob
     Base.metadata.create_all(bind=engine)
 
